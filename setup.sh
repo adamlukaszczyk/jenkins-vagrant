@@ -20,7 +20,7 @@ sudo apt-get install oracle-java8-installer -y
 sudo apt-get install unzip git -y
 
 # install gradle
-cd /opt 
+cd /opt
 sudo wget https://downloads.gradle.org/distributions/gradle-2.6-all.zip
 sudo unzip gradle-2.6-all.zip
 sudo ln -s /opt/gradle-2.6/bin/gradle /usr/local/bin/
@@ -30,7 +30,7 @@ sudo wget http://mirror.nbtelecom.com.br/apache/maven/maven-3/3.3.3/binaries/apa
 sudo tar -xvf apache-maven-3.3.3-bin.tar.gz
 sudo echo "export M2_HOME=/opt/apache-maven-3.3.3" >> /etc/profile
 sudo source /etc/profile
-sudo ln -ls $M2_HOME/bin/* /usr/local/bin/
+sudo ln -s /opt/apache-maven-3.3.3/bin/* /usr/local/bin/
 
 # install jenkins
 sudo apt-get install jenkins -y
